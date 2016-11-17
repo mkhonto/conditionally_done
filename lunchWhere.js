@@ -1,11 +1,11 @@
 const assert = require("assert");
 
-var out = function(bBalance){
-  if (bBalance > 4500){
+var lunchWhere = function(bankBalance){
+  if (bankBalance > 4500){
     return "Go and get KFC!"
   }
 
-  else if (bBalance < 4500 && bBalance > 1500){
+  else if (bankBalance < 4500 && bankBalance > 1500){
     return "Go to PnP"
   }
   else{
@@ -13,6 +13,6 @@ var out = function(bBalance){
   }
 };
 
-assert.equal(out(4400), "Go to KFC");
-assert.equal(out(1800), "Go to PnP");
-assert.equal(out(), "Two minute noodles today");
+assert.equal(lunchWhere(4800), "Go and get KFC!");
+assert.equal(lunchWhere(1800), "Go to PnP");
+assert.equal(lunchWhere(), "Two minute noodles today");
