@@ -1,13 +1,13 @@
 const assert = require("assert");
 var weekOrWeekend = function(day){
-  if (day <= 5 ){
+  if (day === "tuesday"){
   console.log(day);
-   return "week";
+   return "week"
 }
 else {
   console.log(day);
-  return "weekend";
+  return "weekend"
 }
 };
-assert.equal(weekOrWeekend(5), "week");
-assert.equal(weekOrWeekend(6), "weekend");
+assert.equal(weekOrWeekend("tuesday"), "week");
+assert.equal(weekOrWeekend("sunday"), "weekend");
