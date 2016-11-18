@@ -16,11 +16,11 @@ var regis = "CY 987654";
 
     default:
       //console.log(regNumbers.substring(0, 2));
-      return "Some Other Place!";
+      return "Some Other Place!" + regNumbers;
   }
 }
 
 assert.equal(fromWhere("CY 567894"), "Bellville");
 assert.equal(fromWhere("CJ 123456"), "Paarl");
 assert.equal(fromWhere("CA 342567"), "Cape Town");
-//assert.equal(fromWhere();
+assert.equal(fromWhere("GP"), "Some Other Place!" + "GP");
